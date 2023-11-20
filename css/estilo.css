@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding:0x;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+}
+
+/*PAGINA INDEX*/
+.container {  
+    margin-top: 0px auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "nav nav nav"
+      "section section section"
+      "article1 article2 article3"
+      "footer footer footer";
+}
+  
+.nav{ 
+    background-color: white;
+    padding: 1.2rem;
+    display: flex;
+    grid-area: nav;
+    justify-content: space-between;
+    align-items: center; 
+}
+nav .nav img{
+    width: 60px;
+
+}
+nav ul{
+    float: right;
+    list-style: none;
+    text-align: center;
+    vertical-align: top;
+}
+nav li{
+    list-style-type: none;
+    padding: 0px;
+    display: inline;
+}
+nav li a{
+    color: black;
+    font-size: 1em;
+    text-decoration: none;
+    line-height: 70px;
+    padding: 15px 10px;
+}
+nav li a:hover{
+     color: #8F39FF;
+}
+
+.article1 img{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.article1 h3{
+    color: #8F39FF;
+}
+  
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: section; 
+}
+.section h1{
+    text-align: center;
+}
+.section h1 span{
+    color: #8F39FF;
+}
+.section p{
+    text-align: center;
+    text-decoration: none;
+}
+
+.article2{ 
+    grid-area: article2; 
+}
+.article2 h3{
+    color: #8F39FF;
+}
+  
+.article3{ 
+    grid-area: article3; 
+}
+.article3 h3{
+    color: #8F39FF;
+}
+
+.footer{ 
+    grid-area: footer; 
+}
+
+.card{
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    display: inline-block;
+    border: 1px solid grey;
+  }
+  
+  .card-shadow {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+footer{
+    padding: 30px 0 30px 0;
+    text-align: center;
+    clear: both;
+    background-color: black;
+}
+
+
+
+/*PAGINA HABITOS*/
+.foto1 .foto2 .foto3{
+    width: 700px;
+    margin: 20px auto;
+}
+
+/*PAGINA TERAPIA*/
+
+
+/*PAGINA SUSCRIBITE*/
+
+
+.section{
+    width: 700px;
+    margin: 20px auto;
+}
+
+
+
+
+  
+  
+
+
+/*PAGINA SOBRE CALMA*/
+
+.contFormulario {  display: grid;
+    grid-template-columns: 1fr 1.8fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "nav nav nav"
+      "section1 article1 article1"
+      "section2 article2 article2"
+      "section3 article3 article3"
+      "footer footer footer";
+  }
+  
+  .nav{ 
+    background-color: white;
+    padding: 1.2rem;
+    display: flex;
+    grid-area: nav;
+    justify-content: space-between;
+    align-items: center; 
+}
+nav .nav img{
+    width: 60px;
+
+}
+nav ul{
+    float: right;
+    list-style: none;
+    text-align: center;
+    vertical-align: top;
+}
+nav li{
+    list-style-type: none;
+    padding: 0px;
+    display: inline;
+}
+nav li a{
+    color: black;
+    font-size: 1em;
+    text-decoration: none;
+    line-height: 70px;
+    padding: 15px 10px;
+}
+nav li a:hover{
+     color: #8F39FF;
+}
+.section1 {
+    text-align: center;
+    padding: 0px; 
+    grid-area: section1;
+}
+  
+  .article1 {
+    text-align: center;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none; 
+    grid-area: article1;
+}
+  
+  .section2 { 
+    text-align: center;
+    padding: 0px; 
+    grid-area: section2; 
+}
+  
+  .article2 {
+    text-align: center;
+    padding: 0px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   
+    text-decoration: none ;
+    grid-area: article2; 
+}
+  
+  .footer { 
+    padding: 30px 0 30px 0;
+    text-align: center;
+    clear: both;
+    background-color: black;
+    grid-area: footer; 
+}
+  
+  .section3 {
+    text-align: center;
+    padding: 0px;
+    grid-area: section3; 
+}
+  
+  .article3 { 
+    text-align: center;
+    padding: 0px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   
+    text-decoration: none ;
+    grid-area: article3; 
+}
+
+
+
+@media screen and (max-width:400px){
+    .header{
+        flex-direction: column;
+    }
+    .header .container{
+        flex-direction: column;
+    }
+    .header img{
+        margin-bottom: 10px;
+    }
+}
