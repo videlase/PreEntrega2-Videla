@@ -107,6 +107,8 @@ nav li a:hover{
     grid-area: footer; 
 }
 
+
+
 .card{
     width: 300px;
     padding: 20px;
@@ -128,11 +130,14 @@ footer{
 
 
 
-/*PAGINA HABITOS*/
+/*PAGINA HABITOS
+.
+
 .foto1 .foto2 .foto3{
     width: 700px;
     margin: 20px auto;
-}
+}*/
+
 
 /*PAGINA TERAPIA*/
 
@@ -235,6 +240,7 @@ nav li a:hover{
     background-color: black;
     grid-area: footer; 
 }
+
   
   .section3 {
     text-align: center;
@@ -251,17 +257,6 @@ nav li a:hover{
 }
 
 
-
-@media print {
-    body {
-      font-size: 10pt;
-    }
-  }
-  @media screen {
-    body {
-      font-size: 13px;
-    }
-  }
   @media screen, print {
     body {
       line-height: 1.2;
@@ -270,6 +265,7 @@ nav li a:hover{
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
     body {
       line-height: 1.4;
+      font-size: 13px;
     }
   }
 
