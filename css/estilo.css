@@ -251,24 +251,7 @@ a.btn:hover{
 
 
 /*PAGINA SUSCRIBITE*/
-.containerForm {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "navFormulario navFormulario navFormulario"
-      ". sectionForm ."
-      ". sectionForm ."
-      "footer footer footer";
-  }
-  
-  .navFormulario { grid-area: navFormulario; }
-  
-  .sectionForm { grid-area: sectionForm; }
-  
-  .footer { grid-area: footer; }
-  
+
 
 .section{
     width: 700px;
