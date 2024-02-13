@@ -6,7 +6,9 @@
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: white;
+    
 }
+
 
 /*PAGINA INDEX*/
 .container {  
@@ -157,7 +159,6 @@ body header .container2{
     "footer footer footer";
 }
 
-.nav { grid-area: nav; }
 
 .sectionTerapia { grid-area: sectionTerapia; }
 
@@ -241,6 +242,9 @@ a.btn:hover{
 
 /*PAGINA SUSCRIBITE*/
 
+.imagenesFeed{
+  text-align: center;
+}
 
 .section{
     width: 700px;
