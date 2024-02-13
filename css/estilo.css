@@ -21,6 +21,7 @@ body{
       "nav nav nav"
       "section section section"
       "article1 article2 article3"
+     
       "footer footer footer";
 }
   
@@ -138,45 +139,33 @@ body header .container2{
     text-decoration: none;
 
 }
-.nav{
-        background-color: white;
-        padding: 1.2rem;
-        display: flex;
-        grid-area: nav;
-        justify-content: space-between;
-        align-items: center; 
-    
-}
-
-
 
 
 /*PAGINA TERAPIA*/
-.containerTerapia {  display: grid;
-    grid-template-columns: 1.2fr 1.4fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "navTerapia navTerapia navTerapia"
-      "cardTerapia1 cardTerapia1 cardTerapia1"
-      "cardTerapia2 cardTerapia2 cardTerapia2"
-      "cardTerapia3 cardTerapia3 cardTerapia3"
-      "cardTerapia4 cardTerapia4 cardTerapia4"
-      "footer footer footer";
-  }
-  
-  .navTerapia { grid-area: navTerapia; }
-  
-  .cardTerapia1 { grid-area: cardTerapia1; }
-  
-  .cardTerapia2 { grid-area: cardTerapia2; }
-  
-  .cardTerapia3 { grid-area: cardTerapia3; }
-  
-  .cardTerapia4 { grid-area: cardTerapia4; }
-  
-  .footer { grid-area: footer; }
+.containerTerapia {  
+  margin-top: 0px auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "nav nav nav"
+    "sectionTerapia sectionTerapia sectionTerapia"
+    "cardTerapia1 cardTerapia1 cardTerapia1"
+    "footer footer footer";
+}
+
+.nav { grid-area: nav; }
+
+.sectionTerapia { grid-area: sectionTerapia; }
+
+.cardTerapia1 { grid-area: cardTerapia1; }
+
+.footer { grid-area: footer; }
+
+
   
 body {
   margin: 0;
@@ -267,7 +256,10 @@ a.btn:hover{
 
 /*PAGINA SOBRE CALMA*/
 
-.contFormulario {  display: grid;
+.contFormulario {  
+    margin-top: 0px auto;
+    width: 90%;
+    display: grid;
     grid-template-columns: 1fr 1.8fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
@@ -279,44 +271,13 @@ a.btn:hover{
       "section3 article3 article3"
       "footer footer footer";
   }
-  
-  .nav{ 
-    background-color: white;
-    padding: 1.2rem;
-    display: flex;
-    grid-area: nav;
-    justify-content: space-between;
-    align-items: center; 
-}
-nav .nav img{
-    width: 60px;
 
-}
-nav ul{
-    float: right;
-    list-style: none;
-    text-align: center;
-    vertical-align: top;
-}
-nav li{
-    list-style-type: none;
-    padding: 0px;
-    display: inline;
-}
-nav li a{
-    color: black;
-    font-size: 1em;
-    text-decoration: none;
-    line-height: 70px;
-    padding: 15px 10px;
-}
-nav li a:hover{
-     color: #8F39FF;
-}
 .section1 {
     text-align: center;
     padding: 0px; 
     grid-area: section1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
 }
   
   .article1 {
